@@ -54,4 +54,4 @@ cut the first time you don't tell it what you wanted. Tell it. That's the workfl
 ## License
 
 MIT — see `LICENSE`. HyperFrames (Apache-2.0), the YuNet face model (Apache-2.0), and the Inter font (OFL)
-keep their own licenses, included alongside them.
+keep their own licenses — see `THIRD-PARTY-NOTICES.md` and the license files beside each.

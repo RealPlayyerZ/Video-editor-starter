@@ -16,6 +16,8 @@ assets/logos/*
 !assets/logos/README.md
 assets/sfx/*
 !assets/sfx/README.md
+!assets/sfx/synth/
+!assets/sfx/synth/*.wav
 assets/memes/*
 !assets/memes/README.md
 assets/broll/
