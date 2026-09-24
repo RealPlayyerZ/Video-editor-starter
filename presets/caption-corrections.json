@@ -1,0 +1,9 @@
+{
+  "auto": {
+    "exampl": "example",
+    "youtoob": "YouTube"
+  },
+  "flag": {
+    "cloud": "your product name, if WhisperX hears it as a common word"
+  }
+}

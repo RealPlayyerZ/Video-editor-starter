@@ -1,0 +1,87 @@
+{
+  "upstream": "heygen-com/hyperframes",
+  "pin": "0.7.3",
+  "license": "Apache-2.0",
+  "skills": {
+    "faceless-explainer": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "00d1255eb39144278b4562dcdf4a722bd9926297938d4823f732ae59eea14d52"
+    },
+    "general-video": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "3cbbb66533f948847b0f12bf5dc199b95a73635353ce4ed5679b73eeba927e8e"
+    },
+    "graphic-overlays": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "e375e35b2e10ffa4036411e6275c6bec7033b27fe1c75ca6f6fd0df3af8d608a"
+    },
+    "hyperframes": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "6d4541d8c3c6d0c64a9827fdc19f907cd0099765815b08054afd1afa6c2219bd"
+    },
+    "hyperframes-animation": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "fe2e6d58bc9576a4552027b4cade1a65372b2b56b9d55891db41fd7afd0afbf8"
+    },
+    "hyperframes-cli": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "59dcf8d01b5e21a101d6c1225411b487316436221170e7e1dc9b00bf5c27d359"
+    },
+    "hyperframes-core": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "abfdf5ab64b4c8a327948b3d3755d0fc8205807bbdbad9264be1caded88deacf"
+    },
+    "hyperframes-creative": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "7469d36ba453232e912d6df13956e5d38ce00fe77eab5116f19bd956d830a421"
+    },
+    "hyperframes-media": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "db269fbb07ea9f365a8b33b629ba3946a96b9b77bd7cb7a6fec47d1097ad53f0"
+    },
+    "hyperframes-registry": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "e3b389526834109d77cb9c7c9a49d1e87e072f81a0b3cba8f55ed553f1a29b47"
+    },
+    "motion-graphics": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "137111c31a09576a5c787d253e20bc123ff1d540dcf36b9adceb01b5c27ff768"
+    },
+    "pr-to-video": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "e3c5e8b8fccd9c9a74ccf0de6aad62b455a7b371ea0974f3064f27cbeca6f840"
+    },
+    "product-launch-video": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "83715cef1106e5725a1b7a2eb99649522b03dd88c4b6c02185f69b29a05042dc"
+    },
+    "remotion-to-hyperframes": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "afd84dd0332a2fa1b224cd028386a0f9dbbfd716df89d8f40a85f8e763669b0e"
+    },
+    "slideshow": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "29d970ec5ec6790be1bd685fd8ec388cdbc128fcc4a45a4687b9bf4ff627ad5f"
+    },
+    "website-to-video": {
+      "source": "heygen-com/hyperframes",
+      "pin": "0.7.3",
+      "sha256": "7f8424c6df45151168b1c905425495a305ce70c16dcd99a6e958d4cd67be06e4"
+    }
+  }
+}

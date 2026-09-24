@@ -1,0 +1,35 @@
+# --- your footage and renders never belong in git ---
+projects/*/raw/
+projects/*/outputs/
+projects/*/renders/
+projects/*/assemble_work/
+projects/*/paragraphs/
+projects/*/broll/
+projects/*/audio/
+projects/*/thumbnails/
+projects/_brandcheck/
+
+# --- you, personally: keep these local ---
+assets/face-refs/*
+!assets/face-refs/README.md
+assets/logos/*
+!assets/logos/README.md
+assets/sfx/*
+!assets/sfx/README.md
+assets/memes/*
+!assets/memes/README.md
+assets/broll/
+.env
+.mcp.json
+.claude/settings.local.json
+
+# --- machine junk ---
+node_modules/
+.venv*/
+__pycache__/
+*.pyc
+work/
+*.bak*
+*:Zone.Identifier
+.DS_Store
+Thumbs.db

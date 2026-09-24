@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffprobe *)",
+      "Bash(./check-setup.sh*)",
+      "Bash(bash -n *)",
+      "Bash(python3 -m py_compile *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/setup-check.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
