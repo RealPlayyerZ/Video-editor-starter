@@ -70,7 +70,7 @@ The 9/13 two-pass patch still ran the freeze-hold audio splice (asplit → atrim
 pass 1's video graph and had pass 2 read that PCM track back from `pass1_video.mp4`. On the full 30-min
 division2-legendary-mission render that produced **1551 s of audio under 1785 s of video** — ffmpeg rc 0, clean
 log, the same "audio branch inside the big video graph silently loses data" failure class as the sounds
-drop-out. `presets/gameplay/patch_gags_audiopass.py` (applied; backup `gags.py.bak-20260915`) makes pass 1
+drop-out. the two-pass render (built into `gags.py`) makes pass 1
 `-an` and moves the splice into pass 2, which now reads the ORIGINAL input — the standalone graph that shipped
 9/13 at full length. Shorts are unchanged (single pass, same graph as before).
 
@@ -89,7 +89,7 @@ the tag flips mid-stream ffmpeg logs "Reconfiguring filter graph because video p
 REBUILDS the graph: the trim/setpts/concat freeze-splice restarts at pts 0 ("*** dropping frame N at ts 0,
 1, 2…"), every later frame is dropped as past, and the `-loop 1` / `-stream_loop -1` overlay inputs pad the
 output with the last frame until `-t`. The 9/13 build was fine only because splice.sh is one encode.
-Fixes: `presets/gameplay/patch_gags_reinit.py` (applied, `gags.py.bak-20260915b`) puts `-reinit_filter 0`
+Fixes: `gags.py` puts `-reinit_filter 0`
 on the base input of both passes; `splice_segments.py` now passes the source's colour tags + `setsar=1` to
 every segment encode. Rule: any pts-resetting graph (trim/concat/setpts) over a stitched base needs
 `-reinit_filter 0`, and a stitched base should be probed for per-segment tag flips
