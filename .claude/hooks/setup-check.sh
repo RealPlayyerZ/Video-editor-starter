@@ -8,7 +8,7 @@ n=$(grep -c '<<' brand-kit.md 2>/dev/null); n=${n:-0}
 cat <<MSG
 FIRST RUN — this editor is not set up yet: brand-kit.md still has $n <<placeholder>> fields.
 Do NOT start an edit job. Do this first, in order (CLAUDE.md > "First run"):
-  1. ./check-setup.sh — install what it lists, re-run until clean; then: npx hyperframes@0.7.3 doctor
+  1. ./check-setup.sh — install what it lists, re-run until clean; then: npx hyperframes@0.7.3 doctor && npx hyperframes@0.7.3 browser ensure
   2. Fill brand-kit.md Part A with the owner (their handle, voice, colors, fonts, intro/outro, thumbnail look).
   3. "apply my brand kit" — Part B — then render the 10-second brand check and look at it together.
 Setup is done when brand-kit.md has no <<...>> left.

@@ -32,6 +32,10 @@ probe python3 python3 "python" "python3 python3-pip python3-venv"
 probe uv      uv      "uv"     "UV"
 probe node    node    "node"   "NODE"
 probe npx     npx     ""       ""
+# On WSL, a Node installed on Windows leaks onto the Linux PATH (/mnt/c/...). The renderer needs the Linux one.
+for t in node npx npm; do
+  case "$(command -v $t 2>/dev/null)" in /mnt/*) say "!" "$t" "found only the WINDOWS copy ($(command -v $t)) — install Node inside Ubuntu (command below)"; core_missing=1; APT+=("NODE");; esac
+done
 
 # node must be 22+ for the graphics renderer
 if command -v node >/dev/null 2>&1; then
@@ -61,10 +65,10 @@ if [ "$core_missing" -eq 1 ]; then
     printf "%s" "${APT[*]}" | grep -q UV   && echo "  curl -LsSf https://astral.sh/uv/install.sh | sh    # then open a new terminal"
   fi
   echo
-  echo "Then, once: npx hyperframes@0.7.3 doctor    (downloads the headless browser the graphics renderer uses)"
+  echo "Then, once: npx hyperframes@0.7.3 doctor && npx hyperframes@0.7.3 browser ensure    (checks the renderer, then downloads its headless browser)"
   exit 1
 fi
 
 echo
-echo "All core tools present. Next: npx hyperframes@0.7.3 doctor (once), then fill in brand-kit.md."
+echo "All core tools present. Next (once): npx hyperframes@0.7.3 doctor && npx hyperframes@0.7.3 browser ensure — then fill in brand-kit.md."
 exit 0

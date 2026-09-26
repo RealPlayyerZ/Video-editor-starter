@@ -52,6 +52,7 @@ Then, once:
 
 ```bash
 npx hyperframes@0.7.3 doctor
+npx hyperframes@0.7.3 browser ensure   # downloads the headless browser the renderer uses (~150 MB, once)
 ```
 
 That downloads the headless browser the graphics renderer uses.
